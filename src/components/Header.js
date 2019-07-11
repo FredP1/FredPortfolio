@@ -9,7 +9,7 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Fred Palmer</h1>
-                <p>Blank space to put important summary of what this website is.</p>
+                <p>"Charming, handsome, funny! - My mum describing someone who isn't me.</p>
             </div>
         </div>
         <nav>
