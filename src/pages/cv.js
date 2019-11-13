@@ -17,12 +17,12 @@ class cvPage extends Component {
       const { pageNumber, numPages } = this.state;
    
       return (
-        <div div width="100%" height="100%" min-height="100%">
+        <div>
           <Document
             file={Pdf}
             onLoadSuccess={this.onDocumentLoadSuccess}
           >
-            <Page pageNumber={pageNumber} />
+            <Page pageNumber={pageNumber}/>
           </Document>
         </div>
       );
