@@ -1,5 +1,5 @@
 import React from 'react'
-import { Document } from 'react-pdf'
+import { Document, Page } from 'react-pdf'
 import Pdf from '../documents/FredPalmerCV.pdf'
 import '../assets/scss/layout/_cv.scss'
 
