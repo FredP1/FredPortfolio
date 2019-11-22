@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react'
+import PropTypes, { array } from 'prop-types'
 import { Link } from 'gatsby'
 
 import pic01 from '../images/pic01.jpg'
@@ -38,7 +38,7 @@ class Main extends React.Component {
           <p>
             Check out <Link to="/cv">my cv</Link>.
           </p>
-          <p>New paragraph</p>
+          <p>Also check out my <Link to="/emojipasta">my emojipasta tool.</Link></p>
           {close}
         </article>
 
