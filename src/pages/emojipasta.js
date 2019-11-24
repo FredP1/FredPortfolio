@@ -28,7 +28,7 @@ class emojipasta extends Component {
     text = text + ''
     text = text.toLowerCase()
     var textArray = text.toString().split(' ')
-    var emojiDict = { happy: ['😃'], penis: ['🍆'] }
+    var emojiDict = { happy: ['😃'], penis: ['🍆'], funny: ['😂'], wet: ['💦'] }
     var finalString = ''
 
     for (var i = 0; i < textArray.length; i++) {
@@ -43,6 +43,7 @@ class emojipasta extends Component {
   render() {
     return (
       <div>
+          <h1>Emoji Pasta Generator</h1>
         <form onSubmit={this.handleSubmit}>
           Enter Text:
           <input
@@ -53,7 +54,8 @@ class emojipasta extends Component {
           ></input>
           <input type="submit" name="submit"></input>
         </form>
-        <p ref={this.myRef}>Conversion: {this.state.conversion}</p>
+        <h2>Conversion: </h2>
+        <p ref={this.myRef}>{this.state.conversion}</p>
       </div>
     )
   }
