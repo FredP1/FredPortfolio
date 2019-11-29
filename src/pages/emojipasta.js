@@ -1,33 +1,13 @@
-import React, { Component } from 'react'
-import Header from '../components/Header'
+import React, { useState } from 'react'
 import '../assets/scss/main.scss'
 
-class emojipasta extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { value: '' }
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
-    this.myRef = React.createRef()
-    this.state = {conversion: ''}
-  }
-  componentDidMount() {
-    {
-      //this.emojiPasta()
-    }
-  }
-  handleChange(event) {
-    this.setState({ value: event.target.value })
-  }
-  handleSubmit(event) {
-    var returnValue = this.emojiPasta(this.state.value)
-    this.setState({ conversion: returnValue})
-    event.preventDefault()
-  }
-  emojiPasta(text) {
-    text = text + ''
-    text = text.toLowerCase()
-    var textArray = text.toString().split(' ')
+function emojipasta() {
+  const [inputText, setInputText] = useState('')
+  const [outputText, setOutputText] = useState('')
+  function nestedFunction(){
+    var inputShit = inputText;
+    inputShit = inputShit.toLowerCase()
+    var textArray = inputShit.toString().split(' ')
     var emojiDict = { happy: ['😃'], penis: ['🍆'], funny: ['😂'], wet: ['💦'] }
     var finalString = ''
 
@@ -37,28 +17,25 @@ class emojipasta extends Component {
         finalString += emojiDict[textArray[i]]
       }
     }
-    return finalString;
-    window.alert(finalString)
+    //setOutputText(finalString)
+    return finalString; 
   }
-  render() {
-    return (
-      <div>
-          <h1>Emoji Pasta Generator</h1>
-        <form onSubmit={this.handleSubmit}>
-          Enter Text:
-          <input
-            type="text"
-            value={this.state.value}
-            onChange={this.handleChange}
-            ref = {this.myRef}
-          ></input>
-          <input type="submit" name="submit"></input>
-        </form>
-        <h2>Conversion: </h2>
-        <p ref={this.myRef}>{this.state.conversion}</p>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <h1>Emoji Pasta Generator</h1>
+      <form onSubmit={(e) => {setOutputText(nestedFunction()); e.preventDefault()}}>
+        Enter Text:
+        <input
+          type="text"
+          value={inputText}
+          onChange={e => setInputText(e.target.value)}
+        ></input>
+        <input type="submit" name="submit"></input>
+      </form>
+      <h2>Conversion: </h2>
+      <p> {outputText} </p>
+    </div>
+  )
 }
 
 export default emojipasta
