@@ -8,7 +8,7 @@ function emojipasta() {
     var inputShit = inputText;
     inputShit = inputShit.toLowerCase()
     var textArray = inputShit.toString().split(' ')
-    var emojiDict = { happy: ['😃'], penis: ['🍆'], funny: ['😂'], wet: ['💦'] }
+    var emojiDict = { happy: ['😃 '], penis: ['🍆 '], funny: ['😂 '], wet: ['💦 '] }
     var finalString = ''
 
     for (var i = 0; i < textArray.length; i++) {
@@ -23,17 +23,13 @@ function emojipasta() {
   return (
     <div>
       <h1>Emoji Pasta Generator</h1>
-      <form onSubmit={(e) => {setOutputText(nestedFunction()); e.preventDefault()}}>
-        Enter Text:
         <input
           type="text"
           value={inputText}
-          onChange={e => setInputText(e.target.value)}
+          onChange={e => {setInputText(e.target.value); setOutputText(nestedFunction())}}
         ></input>
-        <input type="submit" name="submit"></input>
-      </form>
       <h2>Conversion: </h2>
-      <p> {outputText} </p>
+      <input type ="text" value={outputText} readOnly></input>
     </div>
   )
 }
