@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
+import aboutpic from '../images/aboutpic.jpg'
 import pic03 from '../images/pic03.jpg'
 import Pdf from '../documents/FredPalmerCV.pdf'
 
@@ -33,12 +34,20 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={aboutpic} alt="" />
           </span>
+          <p>My name's Fred Palmer and I'm looking for a full stack developer role in London or east of London.<br/>
+            I recently graduated with a First Class Honour degree in Computer Science from Nottingham Trent University.<br/>
+            I've been working as a SQL developer for an NHS trust since October 2019 (for more detail, please read my CV below).
+          </p>
+          <p>I originally started this website in an effort to learn React. <br/>
+          I started off learning React by training my understanding of state changes. 
+          Once I felt comfortable with classes and states, I decided to focus a little more on Hooks. <br/>
+          Evidence of this learning curve is evident throughout this portfolio.
+          </p>
           <p>
             Check out <Link to="/cv">my cv</Link>.
           </p>
-          <p>Also check out my <Link to="/emojipasta">my emojipasta tool.</Link></p>
           {close}
         </article>
 
@@ -53,25 +62,7 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
-          <p>Work paragraph1</p>
-          <p>Work paragraph2</p>
-          {close}
-        </article>
-
-        <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
-          <p>
-            About Paragraph 1
-          </p>
+          <p>Check out my <Link to="/emojipasta">my emojipasta tool.</Link></p>
           {close}
         </article>
 
