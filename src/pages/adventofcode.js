@@ -7,6 +7,7 @@ function adventofcode() {
     <div>
       <h1>Advent of Code</h1>
       <Link to="/adventofcode/dayone"><button>Day 1</button></Link>
+      <Link to="/adventofcode/daytwo"><button>Day 2</button></Link>
     </div>
   )
 }
