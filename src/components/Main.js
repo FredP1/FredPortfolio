@@ -63,6 +63,7 @@ class Main extends React.Component {
             <img src={pic02} alt="" />
           </span>
           <p>Check out my <Link to="/emojipasta">my emojipasta tool.</Link></p>
+          <p>Check out my <Link to="/adventofcode">my Advent of Code attempts.</Link></p>
           {close}
         </article>
 
