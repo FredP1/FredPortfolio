@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Document, Page } from 'react-pdf'
-import Pdf from '../documents/FredPalmerCV.pdf'
+import Pdf from '../documents/Fred_CV_V2.pdf'
 import '../assets/scss/layout/_cv.scss'
 
 function removeTextLayerOffset() {

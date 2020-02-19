@@ -34,9 +34,9 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={aboutpic} alt="" />
+            <img src={pic02} alt="" />
           </span>
-          <p>My name's Fred Palmer and I'm looking for a full stack developer role in London or east of London.<br/>
+          <p>My name's Fred Palmer.<br/>
             I recently graduated with a First Class Honour degree in Computer Science from Nottingham Trent University.<br/>
             I've been working as a SQL developer for an NHS trust since October 2019 (for more detail, please read my CV below).
           </p>

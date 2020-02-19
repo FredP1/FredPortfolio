@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "fred-portfolio",
+  "description": "Fred Palmers Portfolio",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Fred Palmer",
   "dependencies": {
     "gatsby": "^2.18.3",
     "gatsby-cli": "^2.8.13",
