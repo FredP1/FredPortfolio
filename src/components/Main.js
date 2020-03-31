@@ -6,7 +6,7 @@ import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import aboutpic from '../images/aboutpic.jpg'
 import pic03 from '../images/pic03.jpg'
-import Pdf from '../../public/static/Fred_CV.pdf'
+import Pdf from '../../static/Fred_CV.pdf'
 
 class Main extends React.Component {
   render() {
