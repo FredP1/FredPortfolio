@@ -6,7 +6,7 @@ import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import aboutpic from '../images/aboutpic.jpg'
 import pic03 from '../images/pic03.jpg'
-import Pdf from '../documents/FredPalmerCV.pdf'
+import Pdf from '../documents/Fred_CV.pdf'
 
 class Main extends React.Component {
   render() {
@@ -46,7 +46,7 @@ class Main extends React.Component {
           Evidence of this learning curve is evident throughout this portfolio.
           </p>
           <p>
-            Check out <Link to="/cv">my cv</Link>.
+            Check out <a href = {Pdf} target = "_blank">my CV</a>.
           </p>
           {close}
         </article>
