@@ -45,9 +45,6 @@ class Main extends React.Component {
           Once I felt comfortable with classes and states, I decided to focus a little more on Hooks. <br/>
           Evidence of this learning curve is evident throughout this portfolio.
           </p>
-          <p>
-            Check out <a href = {Pdf} target = "_blank">my CV</a>.
-          </p>
           {close}
         </article>
 
