@@ -36,14 +36,8 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
-          <p>My name's Fred Palmer.<br/>
-            I recently graduated with a First Class Honour degree in Computer Science from Nottingham Trent University.<br/>
-            I've been working as a SQL developer for an NHS trust since October 2019 (for more detail, please read my CV below).
-          </p>
-          <p>I originally started this website in an effort to learn React. <br/>
-          I started off learning React by training my understanding of state changes. 
-          Once I felt comfortable with classes and states, I decided to focus a little more on Hooks. <br/>
-          Evidence of this learning curve is evident throughout this portfolio.
+          <p>Lorem Ipsum<br/>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget lacus sodales neque suscipit rutrum. Nunc posuere dui a velit porta imperdiet. Nunc eu ipsum in urna vehicula molestie. Nullam volutpat tortor nec elit bibendum, nec convallis arcu tincidunt. Integer tortor massa, venenatis ut iaculis et, lacinia dictum dui. Etiam aliquet id libero in ullamcorper. Phasellus eget neque a mauris tempor feugiat a non eros. Vivamus vel elit quis diam hendrerit dignissim vitae id purus. Nulla facilisi. In sed leo eros. Aliquam metus nisi, interdum vel diam elementum, porta rhoncus elit. Integer consequat dictum odio, ac gravida nibh tempus vitae. Donec semper risus nulla, vitae rhoncus sem sagittis quis. Aliquam pulvinar, sem et tempor condimentum, nibh sapien rhoncus arcu, eget ullamcorper nisl est sit amet urna.<br/>
           </p>
           {close}
         </article>
@@ -59,8 +53,8 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
-          <p>Check out my <Link to="/emojipasta">my emojipasta tool.</Link></p>
-          <p>Check out my <Link to="/adventofcode">my Advent of Code attempts.</Link></p>
+          <p>Check out my <Link to="/emojipasta">emojipasta tool.</Link></p>
+          <p>Check out my <Link to="/adventofcode">Advent of Code attempts.</Link></p>
           {close}
         </article>
 
