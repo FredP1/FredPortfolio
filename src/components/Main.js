@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
-import aboutpic from '../images/aboutpic.jpg'
 import pic03 from '../images/pic03.jpg'
 import Pdf from '../documents/Fred_CV.pdf'
 
@@ -54,7 +53,6 @@ class Main extends React.Component {
             <img src={pic02} alt="" />
           </span>
           <p>Check out my <Link to="/emojipasta">emojipasta tool.</Link></p>
-          <p>Check out my <Link to="/adventofcode">Advent of Code attempts.</Link></p>
           {close}
         </article>
 
